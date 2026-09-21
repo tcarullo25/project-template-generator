@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>{{ProjectNamespace}}.Application</RootNamespace>
+    <AssemblyName>{{ProjectNamespace}}.Application</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\{{ProjectName}}.Domain\{{ProjectName}}.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Only the DI abstractions, so this project can register its own services
+         without taking a dependency on a hosting framework. -->
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="{{ExtensionsVersion}}" />
+  </ItemGroup>
+
+</Project>

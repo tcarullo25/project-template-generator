@@ -1,0 +1,44 @@
+{
+  "id": "fullstack-aspnet-react",
+  "displayName": "ASP.NET Core + React + PostgreSQL",
+  "description": "REST API on ASP.NET Core with EF Core and PostgreSQL, a React + TypeScript + Vite frontend, Docker Compose for local development, and test projects for both sides.",
+  "contentDirectory": "content",
+
+  "//": "Every pinned tool and dependency version for the generated stack lives here. This file is the single place to bump them.",
+  "variables": {
+    "TargetFramework": "net8.0",
+    "DotnetSdkVersion": "8.0",
+    "DotnetSdkImageTag": "8.0",
+    "DotnetRuntimeImageTag": "8.0",
+
+    "EfCoreVersion": "8.0.11",
+    "ExtensionsVersion": "8.0.0",
+    "NpgsqlEfCoreVersion": "8.0.11",
+    "SwashbuckleVersion": "6.9.0",
+
+    "MicrosoftNetTestSdkVersion": "17.12.0",
+    "XunitVersion": "2.9.2",
+    "XunitRunnerVersion": "2.8.2",
+    "MvcTestingVersion": "8.0.11",
+
+    "PostgresImageTag": "16-alpine",
+    "NodeImageTag": "20-alpine",
+
+    "ReactVersion": "^18.3.1",
+    "ReactDomVersion": "^18.3.1",
+    "TypesReactVersion": "^18.3.12",
+    "TypesReactDomVersion": "^18.3.1",
+    "TypesNodeVersion": "^22.10.1",
+    "TypeScriptVersion": "~5.6.3",
+    "ViteVersion": "^5.4.11",
+    "VitePluginReactVersion": "^4.3.4",
+    "VitestVersion": "^2.1.8",
+    "JsdomVersion": "^25.0.1",
+    "TestingLibraryReactVersion": "^16.1.0",
+    "TestingLibraryJestDomVersion": "^6.6.3",
+
+    "ApiHttpPort": "8080",
+    "WebDevPort": "5173",
+    "PostgresPort": "5432"
+  }
+}

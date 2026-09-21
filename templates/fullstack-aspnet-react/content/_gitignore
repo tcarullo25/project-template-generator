@@ -1,0 +1,24 @@
+# .NET
+bin/
+obj/
+*.user
+artifacts/
+TestResults/
+
+# Node
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Local environment (never commit real secrets; .env.example is the template)
+.env
+.env.local
+src/Frontend/web/.env
+src/Frontend/web/.env.local
+
+# Editors / OS
+.vs/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

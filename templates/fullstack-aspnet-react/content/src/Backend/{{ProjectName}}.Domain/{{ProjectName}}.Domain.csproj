@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>{{ProjectNamespace}}.Domain</RootNamespace>
+    <AssemblyName>{{ProjectNamespace}}.Domain</AssemblyName>
+  </PropertyGroup>
+
+  <!-- Intentionally has no dependencies. -->
+
+</Project>

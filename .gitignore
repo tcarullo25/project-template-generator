@@ -1,0 +1,18 @@
+# Build output
+bin/
+obj/
+artifacts/
+*.user
+
+# Test / tool output
+TestResults/
+.vs/
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local scratch
+/tmp-output/

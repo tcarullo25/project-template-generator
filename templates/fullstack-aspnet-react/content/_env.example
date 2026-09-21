@@ -1,0 +1,22 @@
+# Copy to .env and adjust. docker compose reads this file automatically.
+# Nothing in .env should ever be committed.
+
+# --- PostgreSQL -------------------------------------------------------------
+POSTGRES_DB={{DatabaseName}}
+POSTGRES_USER={{DatabaseUser}}
+POSTGRES_PASSWORD=change-me-locally
+POSTGRES_PORT={{PostgresPort}}
+
+# --- Backend ----------------------------------------------------------------
+# ASP.NET Core reads ConnectionStrings__Default as configuration key
+# "ConnectionStrings:Default". docker compose builds it from the values above;
+# this is the value used when running the API outside Docker.
+ConnectionStrings__Default=Host=localhost;Port={{PostgresPort}};Database={{DatabaseName}};Username={{DatabaseUser}};Password=change-me-locally
+ASPNETCORE_ENVIRONMENT=Development
+API_PORT={{ApiHttpPort}}
+
+# --- Frontend ---------------------------------------------------------------
+WEB_PORT={{WebDevPort}}
+# Base URL the browser uses to reach the API. Empty means "same origin", which
+# lets the Vite dev server proxy /api to the backend (see vite.config.ts).
+VITE_API_BASE_URL=

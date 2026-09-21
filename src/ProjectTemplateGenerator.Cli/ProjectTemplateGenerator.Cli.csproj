@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ProjectTemplateGenerator.Cli</RootNamespace>
+    <AssemblyName>project-template-generator</AssemblyName>
+    <!-- Packable as a .NET global tool; see the README for install instructions. -->
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>project-template-generator</ToolCommandName>
+    <PackageId>ProjectTemplateGenerator</PackageId>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProjectTemplateGenerator.Core\ProjectTemplateGenerator.Core.csproj" />
+  </ItemGroup>
+
+</Project>

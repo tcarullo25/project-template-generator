@@ -1,0 +1,30 @@
+{
+  "name": "{{ProjectSlug}}-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "react": "{{ReactVersion}}",
+    "react-dom": "{{ReactDomVersion}}"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "{{TestingLibraryJestDomVersion}}",
+    "@testing-library/react": "{{TestingLibraryReactVersion}}",
+    "@types/react": "{{TypesReactVersion}}",
+    "@types/node": "{{TypesNodeVersion}}",
+    "@types/react-dom": "{{TypesReactDomVersion}}",
+    "@vitejs/plugin-react": "{{VitePluginReactVersion}}",
+    "jsdom": "{{JsdomVersion}}",
+    "typescript": "{{TypeScriptVersion}}",
+    "vite": "{{ViteVersion}}",
+    "vitest": "{{VitestVersion}}"
+  }
+}

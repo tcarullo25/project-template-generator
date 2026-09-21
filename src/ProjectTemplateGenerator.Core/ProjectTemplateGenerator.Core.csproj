@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>ProjectTemplateGenerator.Core</RootNamespace>
+    <AssemblyName>ProjectTemplateGenerator.Core</AssemblyName>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <!--
+    Templates live as ordinary files under /templates so they can be inspected,
+    edited and diffed like any other source. They are copied next to the built
+    assembly (and into the publish output) rather than embedded as resources,
+    which keeps the on-disk layout of a template identical to what ships.
+    See TemplateCatalog / DirectoryTemplateSource.
+  -->
+  <ItemGroup>
+    <TemplateFiles Include="$(MSBuildThisFileDirectory)..\..\templates\**\*" />
+    <Content Include="@(TemplateFiles)"
+          Link="templates\%(RecursiveDir)%(Filename)%(Extension)"
+          CopyToOutputDirectory="PreserveNewest"
+          CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>
