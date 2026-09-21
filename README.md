@@ -31,7 +31,7 @@ Two properties matter:
 
 ## Prerequisites
 
-- .NET SDK 8.0 or newer (to build and run the generator).
+- .NET SDK 10.0 or newer (to build and run the generator).
 
 That is all the generator needs. The *generated* project additionally needs
 Node.js, Docker and `dotnet-ef` — its own README lists them.

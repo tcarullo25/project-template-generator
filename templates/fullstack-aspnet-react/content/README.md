@@ -15,7 +15,7 @@ single `/api/status` endpoint the frontend calls to prove the whole path works.
 | Tool | Version | Needed for |
 | --- | --- | --- |
 | .NET SDK | {{DotnetSdkVersion}} | building and running the backend |
-| Node.js | 20 or newer | building and running the frontend |
+| Node.js | {{NodeMajorVersion}} or newer | building and running the frontend |
 | Docker (with Compose v2) | any recent | running PostgreSQL and the full stack |
 | `dotnet-ef` | matching EF Core {{EfCoreVersion}} | creating and applying migrations |
 
